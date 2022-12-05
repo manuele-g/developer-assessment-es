@@ -20,10 +20,11 @@ Write a program that retrieves the following information given the provided file
 
 <h2>Prerequisites</h2>
 <li>Java 17</li>
-<li>Apache Maven (3.8.6 used)</li>
+<li>Apache Maven (3.8.6)</li>
 <li>Docker</li>
+<li>Elasticsearch</li>
 
-<h2>Prepare the environment</h2>
+<h2>How to prepare the environment</h2>
 
 <h3>Running Elasticsearch and Kibana with Docker Compose</h3>
 <p>Running Docker</p>
@@ -43,10 +44,11 @@ Write a program that retrieves the following information given the provided file
 <p>Elasticsearch running on:</p>
 <code>http://localhost:9200/</code>
 
-<p>if the process Vmmem consumes a lot of memory, you can set the file ..wslconfig. For Windows environment, the folder where put the file is C:\Users\{user} to limit it. Below is my configuration that limits VM memory in WSL 2 to 8 GB:</p>
+<p>(optional) if the process Vmmem consumes a lot of memory, you can set the file ..wslconfig. For Windows environment, the folder where put the file is C:\Users\{user} to limit it. Below is my configuration that limits VM memory in WSL 2 to 8 GB:</p>
 <code>[wsl2]<br>memory=8GB</br></code>
 
 <h3>How to Build the project with Maven</h3>
+<code>mvn clean install -Pprod</code>
 <p>Exist two Maven profiles:
 <li><b>local</b>: local environment</li>
 <li><b>prod</b>: production environment, e.g. Docker</li>
