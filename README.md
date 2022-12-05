@@ -50,11 +50,9 @@ Write a program that retrieves the following information given the provided file
 <h3>How to Build the project with Maven</h3>
 <code>mvn clean install -Pprod</code>
 <p>Exist two Maven profiles:
-<li><b>local</b>: local environment</li>
-<li><b>prod</b>: production environment, e.g. Docker</li>
+<li><b>local</b>: local environment: <code>mvn clean install -Plocal</code></li>
+<li><b>prod</b>: production environment, e.g. Docker: <code>mvn clean install -Pprod</code></li>
 </p>
-<code>mvn clean install -Plocal</code>
-<br><code>mvn clean install -Pprod</code>
 
 <h3>How to start the Spring Boot application with Docker</h3>
 <p>Go to the folder (project root) where the dockerfile is located:</p>
@@ -74,16 +72,17 @@ Write a program that retrieves the following information given the provided file
 <h2>API Documentation</h2>
 
 <h3>1.To import the countries, airports and runways data</h3>
-<p>Returns true if this operation is successful</p>
 <code>GET /assessment/import/json/data</code>
+<p>Returns true if this operation is successful</p>
 
 <h3>2. To retrieve the top x countries  with the highest number of airports</h3>
+<code>GET /assessment/airport/statistics/top/{limit}/countries</code>
 <p>Path Parameters:
 <li>limit (required): represents the max number of airport runways that are retrieved, e.g. if you want ten countries, set {limit} to 10</li>
 </p>
-<code>GET /assessment/airport/statistics/top/{limit}/countries</code>
 
 <h3>3. To retrieve the runways for each airport given a country code or country name. It also works with partial/fuzzy code or name</h3>
+<code>POST /assessment/aiport/statistics/given/country</code>
 <p>JSON body parameters:
 <li><b>code</b> (optional): represents the country code whose airport runways you would like to retrieve.</li>
 <li><b>name</b> (optional): represents the country name whose airport runways you would like to retrieve.</li>
@@ -92,7 +91,6 @@ Write a program that retrieves the following information given the provided file
 <li><b>sortBy</b> (required): represents the property to order for, e.g. id</li>
 <li><b>sortOrder</b> (required): represents the sort directions (asc/desc). Default: asc</li>
 </p>
-<code>POST /assessment/aiport/statistics/given/country</code>
 
 <h2>Postman Collection</h2>
 
