@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "40254355-d2b2-4940-ac82-011e789b716d",
+		"name": "developer-assessment-es",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01_Import data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/assessment/import/json/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"assessment",
+						"import",
+						"json",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02_Top10_countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/assessment/airport/statistics/top/10/countries",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"assessment",
+						"airport",
+						"statistics",
+						"top",
+						"10",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03_Find_runways_by_country_code_or_name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Angola\",\r\n  \"page\": 0,\r\n  \"size\":100,\r\n  \"sortBy\": \"id\",\r\n  \"sortOrder\": \"asc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/assessment/airport/statistics/given/country",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"assessment",
+						"airport",
+						"statistics",
+						"given",
+						"country"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04_Find_runways_by_country_code_or_name Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Angola\",\r\n  \"page\": 0,\r\n  \"size\":100,\r\n  \"sortBy\": \"id\",\r\n  \"sortOrder\": \"asc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/assessment/airport/statistics/given/country",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"assessment",
+						"airport",
+						"statistics",
+						"given",
+						"country"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03_Find_runways_by_country_code_or_name Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Angola\",\r\n  \"page\": 0,\r\n  \"size\":100,\r\n  \"sortBy\": \"id\",\r\n  \"sortOrder\": \"asc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/assessment/airport/statistics/given/country",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"assessment",
+						"airport",
+						"statistics",
+						"given",
+						"country"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
