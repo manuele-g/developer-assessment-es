@@ -66,6 +66,7 @@ public class AirportStatisticsService implements IAirportStatisticsService {
 	@Autowired
 	private CountryRepository countryRepository;
 
+	/** The airport repository. */
 	@Autowired
 	private AirportRepository airportRepository;
 
@@ -81,6 +82,7 @@ public class AirportStatisticsService implements IAirportStatisticsService {
 	@Autowired
 	private ElasticsearchOperations elasticsearchOperations;
 
+	/** The page size country. */
 	@Value("${page.size.country}")
 	private Integer pageSizeCountry;
 
@@ -165,6 +167,12 @@ public class AirportStatisticsService implements IAirportStatisticsService {
 		}
 	}
 
+	/**
+	 * Filter country by code or name.
+	 *
+	 * @param filter the filter
+	 * @return the list
+	 */
 	private List<String> filterCountryByCodeOrName(CountryFilterDto filter) {
 		log.info("Creating query and pageable to get countries given a code or name...");
 		Pageable pageable = PageRequest.of(0, pageSizeCountry, Sort.Direction.ASC, "id");

@@ -38,6 +38,8 @@ public class ImportService implements IImportService {
 
 	/**
 	 * Import json data.
+	 *
+	 * @return the boolean
 	 */
 	@Override
 	public Boolean importJsonData() {

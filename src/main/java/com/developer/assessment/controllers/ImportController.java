@@ -25,6 +25,8 @@ public class ImportController {
 
 	/**
 	 * Import json data.
+	 *
+	 * @return the boolean
 	 */
 	@GetMapping("/json/data")
 	public Boolean importJsonData() {

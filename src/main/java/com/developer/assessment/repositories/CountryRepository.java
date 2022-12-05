@@ -11,5 +11,11 @@ import com.developer.assessment.entities.Country;
  */
 public interface CountryRepository extends ElasticsearchRepository<Country, Long> {
 
+	/**
+	 * Find by code.
+	 *
+	 * @param code the code
+	 * @return the optional
+	 */
 	Optional<Country> findByCode(String code);
 }

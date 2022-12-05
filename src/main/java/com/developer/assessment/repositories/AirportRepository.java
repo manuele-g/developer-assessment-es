@@ -12,5 +12,12 @@ import com.developer.assessment.entities.Airport;
  */
 public interface AirportRepository extends ElasticsearchRepository<Airport, Long> {
 
+	/**
+	 * Find by iso country in.
+	 *
+	 * @param list the list
+	 * @param pageAble the page able
+	 * @return the list
+	 */
 	List<Airport> findByIsoCountryIn(List<String> list, Pageable pageAble);
 }

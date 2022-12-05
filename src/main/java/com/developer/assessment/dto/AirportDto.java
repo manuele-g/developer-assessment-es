@@ -377,10 +377,20 @@ public class AirportDto {
 		this.wikipediaLink = wikipediaLink;
 	}
 
+	/**
+	 * Gets the iso country.
+	 *
+	 * @return the iso country
+	 */
 	public String getIsoCountry() {
 		return isoCountry;
 	}
 
+	/**
+	 * Sets the iso country.
+	 *
+	 * @param isoCountry the new iso country
+	 */
 	public void setIsoCountry(String isoCountry) {
 		this.isoCountry = isoCountry;
 	}

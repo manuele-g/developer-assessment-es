@@ -7,6 +7,8 @@ public interface IImportService {
 
 	/**
 	 * Import json data.
+	 *
+	 * @return the boolean
 	 */
 	Boolean importJsonData();
 
