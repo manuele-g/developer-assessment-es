@@ -85,8 +85,8 @@ Write a program that retrieves the following information given the provided file
 
 <h3>3. To retrieve the runways for each airport given a country code or country name. It also works with partial/fuzzy code or name</h3>
 <p>JSON body parameters:
-<li><b>code</b> (optional): represents the country code whose airport runways you would like to retrieve. At least one between the country code and country name is mandatory.</li>
-<li><b>name</b> (optional): represents the country name whose airport runways you would like to retrieve. At least one between the country code and country name is mandatory.</li>
+<li><b>code</b> (optional): represents the country code whose airport runways you would like to retrieve.</li>
+<li><b>name</b> (optional): represents the country name whose airport runways you would like to retrieve.</li>
 <li><b>page</b> (required): represents the page that is retrieved</li>
 <li><b>size</b> (required): represents the max number of airport runways that are retrieved</li>
 <li><b>sortBy</b> (required): represents the property to order for, e.g. id</li>
