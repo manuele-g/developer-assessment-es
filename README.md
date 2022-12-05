@@ -43,8 +43,8 @@ Write a program that retrieves the following information given the provided file
 <code>http://localhost:5601/</code>
 <p>Elasticsearch running on:</p>
 <code>http://localhost:9200/</code>
-
-<p>(optional) if the process Vmmem consumes a lot of memory, you can set the file ..wslconfig. For Windows environment, the folder where put the file is C:\Users\{user} to limit it. Below is my configuration that limits VM memory in WSL 2 to 8 GB:</p>
+<br>
+<p>(optional) if the process Vmmem consumes a lot of memory, you can set the file .wslconfig. For Windows environment, the folder where put the file is C:\Users\{user} to limit it. Below is my configuration that limits VM memory in WSL 2 to 8 GB:</p>
 <code>[wsl2]<br>memory=8GB</br></code>
 
 <h3>How to Build the project with Maven</h3>
