@@ -9,7 +9,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  */
 @SpringBootApplication
 @EnableWebMvc
-//@EnableSwagger2
 public class DeveloperAssessmentApplication {
 
 	/**

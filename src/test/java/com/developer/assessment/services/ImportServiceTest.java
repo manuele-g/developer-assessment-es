@@ -17,20 +17,28 @@ import com.developer.assessment.repositories.AirportRepository;
 import com.developer.assessment.repositories.CountryRepository;
 import com.google.common.collect.Lists;
 
+/**
+ * The Class ImportServiceTest.
+ */
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(loader = AnnotationConfigContextLoader.class)
 class ImportServiceTest {
 
+	/** The airport repository. */
 	@Mock
 	private AirportRepository airportRepository;
 
+	/** The country repository. */
 	@Mock
 	private CountryRepository countryRepository;
 
-	/** The chat service. */
+	/** The import service. */
 	@InjectMocks
 	private ImportService importService;
 
+	/**
+	 * Import json data success.
+	 */
 	@Test
 	void importJsonData_success() {
 		when(this.countryRepository.saveAll(Mockito.any())).thenReturn(Lists.newArrayList());
@@ -41,6 +49,9 @@ class ImportServiceTest {
 		assertTrue(result);
 	}
 
+	/**
+	 * Import json data fail during import countries.
+	 */
 	@Test
 	void importJsonData_fail_during_import_countries() {
 		when(this.countryRepository.saveAll(Mockito.any())).thenThrow(new InternalError());
@@ -49,6 +60,9 @@ class ImportServiceTest {
 		});
 	}
 
+	/**
+	 * Import json data fail during import airports.
+	 */
 	@Test
 	void importJsonData_fail_during_import_airports() {
 		when(this.airportRepository.saveAll(Mockito.any())).thenThrow(new InternalError());
