@@ -141,4 +141,4 @@ Returns true if this operation is successful
 
 ## Postman Collection
 
-The postman collection is in the project root. [Click here](https://github.com/manuele-g/airports-assessment-mariadb/blob/main/developer-assessment-es.postman_collection.json) to see the postman collection.
+The postman collection is in the project root. [Click here](https://github.com/manuele-g/developer-assessment-es/blob/main/developer-assessment-es.postman_collection.json) to see the postman collection.
