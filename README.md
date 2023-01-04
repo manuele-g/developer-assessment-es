@@ -36,7 +36,7 @@ Bonus: Support retrieving the information given a partial/fuzzy country code/nam
 
 ## Setting up the environment
 
-* [How to install and run MariaDB with Dockcer](#how-to-run-elasticsearch-and-kibana-with-docker-compose).
+* [How to run Elasticsearch and Kibana with Docker Compose](#how-to-run-elasticsearch-and-kibana-with-docker-compose).
 * [How to Build the project with Maven](#how-to-build-the-project-with-maven)
 * [How to start the Spring Boot application with Docker](#how-to-start-the-spring-boot-application-with-docker)
 * [Import countries, airports and runways data into Elasticsearch](import-countries-airports-and-runways-data-into-elasticsearch)
@@ -128,7 +128,7 @@ Returns true if this operation is successful
 
 #### 3. To retrieve the runways for each airport given a country code or country name. It also works with partial/fuzzy code or name
 
-	>POST /assessment/aiport/statistics/given/country
+	POST /assessment/aiport/statistics/given/country
 
 *JSON body parameters:*
 
